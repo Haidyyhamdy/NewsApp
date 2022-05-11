@@ -1,3 +1,7 @@
+
+
+import 'dart:math';
+
 import 'package:bloc/bloc.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -49,7 +53,7 @@ class NewsCubit extends Cubit<NewsStates> {
       'apiKey': '16f38a3de0fb4f73bb5c21907ea6bc74',
     }).then((value) {
       business = value.data['articles'];
-      print(business[0]['title']);
+      log(business[0]['title']);
       emit(GetBusinessSuccessState());
     }).catchError((error) {
       print(error.toString());
@@ -67,7 +71,7 @@ class NewsCubit extends Cubit<NewsStates> {
         'apiKey': '16f38a3de0fb4f73bb5c21907ea6bc74',
       }).then((value) {
         sports = value.data['articles'];
-        print(sports[0]['title']);
+        log(sports[0]['title']);
         emit(GetSportsSuccessState());
       }).catchError((error) {
         print(error.toString());
@@ -89,7 +93,7 @@ class NewsCubit extends Cubit<NewsStates> {
       }).then((value) {
         // print(value.data['articles'][0]['title'].toString());
         science = value.data['articles'];
-        print(science[0]['title']);
+        log(science[0]['title']);
         emit(GetScienceSuccessState());
       }).catchError((error) {
         print(error.toString());
@@ -108,7 +112,7 @@ class NewsCubit extends Cubit<NewsStates> {
       'apiKey': '16f38a3de0fb4f73bb5c21907ea6bc74',
     }).then((value) {
       search = value.data['articles'];
-      print(search[0]['title']);
+      log(search[0]['title']);
       emit(GetSearchSuccessState());
     }).catchError((error) {
       print(error.toString());

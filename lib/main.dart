@@ -1,10 +1,10 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:news_app/layout/cubit/cubit.dart';
 import 'package:news_app/layout/news_layout/news_layout.dart';
+import 'package:news_app/modules/on_boarding/on_boarding_screen.dart';
 import 'package:news_app/shared/bloc_observer.dart';
 import 'package:news_app/shared/cubit/cubit.dart';
 import 'package:news_app/shared/cubit/states.dart';
@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
             themeMode:
                 AppCubit.get(context).isDark ? ThemeMode.dark : ThemeMode.light,
             home: SplashScreenView(
-              navigateRoute: NewsLayout(),
+              navigateRoute: OnBoardingScreen(),
               imageSrc: "assets/images/news.png",
               duration: 5000,
               imageSize: 150,

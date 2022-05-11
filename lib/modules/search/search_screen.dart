@@ -16,6 +16,21 @@ class SearchScreen extends StatelessWidget {
         var list = NewsCubit.get(context).search;
         return Scaffold(
           appBar: AppBar(
+leading: IconButton(
+  icon: Icon(Icons.arrow_back_ios,),
+  onPressed: (){
+    Navigator.pop(context);
+  },
+
+),
+            title:Text(
+              'Search',
+              style:TextStyle(
+                color:Colors.blue,
+                fontFamily: 'Cardo',
+                fontStyle: FontStyle.italic,
+              )
+            ),
             iconTheme: IconThemeData(
               color: Theme.of(context).iconTheme.color,
             ),
@@ -35,8 +50,9 @@ class SearchScreen extends StatelessWidget {
                         return 'Search Must Not Empty';
                       }
                     },
-                    label: 'Search...',
-                    prefix: Icons.search),
+                    label: 'search',
+                    prefix: Icons.search,
+                    context: context),
               ),
               Expanded(child: articleBuilder(list, context, isSearch: true)),
             ],

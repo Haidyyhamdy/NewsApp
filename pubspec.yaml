@@ -37,6 +37,7 @@ dependencies:
   shared_preferences:
   webview_flutter:
   splash_screen_view:
+  smooth_page_indicator:
 
 dev_dependencies:
   flutter_test:
@@ -69,10 +70,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: Cardo
+      fonts:
+        - asset: assets/fonts/Cardo-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
