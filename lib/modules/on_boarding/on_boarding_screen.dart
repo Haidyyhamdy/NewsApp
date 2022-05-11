@@ -46,7 +46,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       ),
                       child: Center(
                         child: Image.asset(
-                          'assets/images/boarding1.gif',
+                          'assets/images/boarding1.png',
                         ),
                       ),
                     ),
@@ -80,7 +80,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       ),
                       child: Center(
                         child: Image.asset(
-                          'assets/images/boarding2.gif',
+                          'assets/images/boarding2.png',
                         ),
                       ),
                     ),
