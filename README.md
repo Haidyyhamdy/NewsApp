@@ -1,16 +1,10 @@
-# news_app
+**newsApp**
 
-A new Flutter application.
+![1](https://user-images.githubusercontent.com/93411570/235319709-d7ecfe37-3c11-463f-87fb-b141a89c65bd.png)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+![2](https://user-images.githubusercontent.com/93411570/235319754-810c473a-6776-4559-b18f-7459bd4fe7bd.png)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![3](https://user-images.githubusercontent.com/93411570/235319768-c5cf4579-0e92-405b-8b31-f8bfa2959e75.png)
